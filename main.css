@@ -62,16 +62,48 @@ h1, h2, h3, h4, h5, h6 {
     left: 120px;
     top: 40px; */
 
-    /* Card_background */
+    width: fit-content !important;
 
-    
+    /* Card_background */
     background: #F4F7FE;
     border-radius: 10px;
 }
 
-.sidebar .btn {
+.sidebar button span {
     text-align: left;
-    width: max-content;
+    vertical-align: middle;
+}
+
+.sidebar button svg {
+    margin: 0 12px 0 0;
+}
+
+.sidebar .btn:active {
+    color: #2164F1;
+
+}
+
+.sidebar .btn:focus {
+    color: #2164F1;
+}
+
+.sidebar .btn {
+    width: 100%;
+    text-align: left;
+}
+
+
+
+.account-label::before {
+    content: ' ';
+    background-image: url('./img/Avatar.svg');
+    background-size: 40px 40px;
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    vertical-align: middle;
 }
 
 .topbar {
@@ -92,6 +124,18 @@ h1, h2, h3, h4, h5, h6 {
 .card-task{
     background: #F4F7FE;
     border-radius: 15px;
+}
+
+.locked .svg-lock {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 1200px) {
+
+    .sidebar .btn .span .span {
+        display: none  !important;
+    }
+    
 }
 
 
