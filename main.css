@@ -92,6 +92,15 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar .btn {
     width: 100%;
     text-align: left;
+    border-radius: 10px;
+}
+
+.btn-sc {
+    border-radius: 10px !important;
+}
+
+.sidebar .btn:hover, .btn-sc:hover {
+   background-color: #ffffff;
 }
 
 .btn-right svg {
@@ -151,9 +160,21 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 
-.btn-edit-task-name {
-    padding:0 !important;
+.task-answer input {
+    background: none !important;
+    border: none!important;
+    font-weight: 700;
+    font-size: 30px;
+
+    
 }
+
+.task-answer input::placeholder{
+    font-weight: 700!important;
+
+}
+
+
 
 .btn-upload {
     font-weight: 700 !important;
@@ -192,26 +213,79 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px !important;
 }
 
+.btn-pr:hover{
+    background: #1951ca !important;
 
-@media (min-width: 1200px) {
-
-    .sidebar .btn .span .span {
-        display: none  !important;
-    }
-    
 }
+
+
 
 .portfolio {
     border-radius: 15px;
     background-color: white;
+    overflow: hidden!important;
 }
 
 .portfolio-part img{
     width:100%;
+    padding:0;
+    
+}
+
+.modal-content {
+    border-radius: 15px !important;
+    border:none !important;
+}
+
+.modal-header, .modal-footer{
+    border: none !important;
+}
+
+.modal .link-portfolio {
+    color:#2164F1;
+}
+
+.btn-close {
+    background-color: rgb(19, 15, 38, .4) !important ;
+    border-radius: 10px !important ;
+}
+
+@media (max-width: 1400px) {
+
+    .sidebar{
+        margin-left: 5%;
+    }
+    .sidebar span .s-btn-label {
+        display: none  !important;
+    }
+
+    .sidebar .btn svg {
+        margin:0 !important;
+    }
+
+    .account-label::before {
+       
+        margin-right: 0px !important;
+        
+    }
+    
+}
+
+@media (max-width: 990px) {
+
+    .sidebar{
+        margin-left:2%;
+    }
+    
+    
 }
 
 
 @media (max-width: 768px) {
+    
+    .sidebar{
+        margin-left:0;
+    }
 
     .card-task .col-md-6 {
         margin-top: 2em !important;
