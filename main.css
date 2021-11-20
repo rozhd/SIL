@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
 }
 
-.btn-save-task {
+.btn-pr-disabled {
     background: #7E95C6 !important;
     border-radius: 15px !important;
     color: white !important;
@@ -199,6 +199,15 @@ h1, h2, h3, h4, h5, h6 {
         display: none  !important;
     }
     
+}
+
+.portfolio {
+    border-radius: 15px;
+    background-color: white;
+}
+
+.portfolio-part img{
+    width:100%;
 }
 
 
