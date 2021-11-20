@@ -99,8 +99,9 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px !important;
 }
 
-.sidebar .btn:hover, .btn-sc:hover {
+.sidebar .btn:hover, .btn-sc:hover, .upload-field:hover{
    background-color: #ffffff;
+    cursor: pointer;
 }
 
 .btn-right svg {
@@ -143,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-task:hover {
     box-shadow: 0 0 15px rgba(33, 99, 241, 0.50);
+    cursor: pointer;
     
 }
 
@@ -189,7 +191,12 @@ h1, h2, h3, h4, h5, h6 {
     border: 5px dashed #2164F1;
     box-sizing: border-box;
     border-radius: 15px;
+
+    transition: background-color .5s;
+    cursor: pointer;
 }
+
+
 
 .btn-pr-disabled {
     background: #7E95C6 !important;
