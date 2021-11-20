@@ -1,6 +1,8 @@
 body {
     font-family: 'Lexend', sans-serif !important;
     background-color: white!important;
+    padding: 0;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -124,10 +126,21 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-.card-task{
+.card-task, .card-common{
     background: #F4F7FE;
     border-radius: 15px;
+    transition: box-shadow .5s;
 }
+
+.card-task:hover {
+    box-shadow: 0 0 15px rgba(33, 99, 241, 0.50);
+    
+}
+
+.card-task ~ .locked:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
 
 .locked .svg-lock {
     margin-bottom: 2em;
@@ -166,9 +179,19 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.btn-save-task span {
+.btn span {
     vertical-align: middle;
 }
+
+
+.btn-pr{
+    background: #2164F1 !important;
+    border-radius: 15px !important;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
 
 @media (min-width: 1200px) {
 
