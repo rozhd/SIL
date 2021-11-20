@@ -69,16 +69,16 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
 }
 
-.sidebar button span {
+.sidebar .btn span, .topbar .btn span {
     text-align: left;
     vertical-align: middle;
 }
 
-.sidebar button svg {
+.sidebar .btn svg, .topbar .btn svg {
     margin: 0 12px 0 0;
 }
 
-.sidebar .btn:active {
+.sidebar .btn:active, .topbar .btn:active {
     color: #2164F1;
 
 }
@@ -92,6 +92,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
+.btn-right svg {
+    margin: 0 0 0 12px !important;
+}
 
 
 .account-label::before {
@@ -128,6 +131,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .locked .svg-lock {
     margin-bottom: 2em;
+}
+
+.task-answer h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-edit-task-name {
+    padding:0 !important;
+}
+
+.btn-upload {
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    color:#2164F1 !important;
+}
+
+
+.upload-field {
+        /* Blue_accent */
+
+    border: 5px dashed #2164F1;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.btn-save-task {
+    background: #7E95C6 !important;
+    border-radius: 15px !important;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    
+}
+
+.btn-save-task span {
+    vertical-align: middle;
 }
 
 @media (min-width: 1200px) {
