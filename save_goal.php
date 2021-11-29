@@ -2,7 +2,7 @@
 
 $date = date("Y-M-D H:i:s");
 
-$browser = $_SERVER["HTTP_USER_AGENT"];
+$browser = '"'.$_SERVER["HTTP_USER_AGENT"].'"';
 
 $ip = $_SERVER["REMOTE_ADDR"];
 

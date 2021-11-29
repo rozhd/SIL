@@ -2,7 +2,7 @@
 
 $visitDate = date("Y-M-D H:i:s");
 
-$visitBrowser = $_SERVER["HTTP_USER_AGENT"];
+$visitBrowser = '"'.$_SERVER["HTTP_USER_AGENT"].'"';
 
 $visitIp = $_SERVER["REMOTE_ADDR"];
 
