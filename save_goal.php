@@ -6,7 +6,9 @@ $browser = '"'.$_SERVER["HTTP_USER_AGENT"].'"';
 
 $ip = $_SERVER["REMOTE_ADDR"];
 
-$s = "$date,$browser,$ip\n";
+$goal = $_POST["goal"];
+
+$s = "$date,$browser,$ip,$goal\n";
 
 file_put_contents("goals.csv", $s, FILE_APPEND);
 
