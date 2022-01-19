@@ -1,12 +1,12 @@
 <?php 
 
-$visitDate = date("Y-M-D H:i:s");
+$visitDate = date("Y-M-d");
 
-$visitBrowser = '"'.$_SERVER["HTTP_USER_AGENT"].'"';
+$visitTime = date("H:i:s");
 
 $visitIp = $_SERVER["REMOTE_ADDR"];
 
-$s = "$visitDate,$visitBrowser,$visitIp\n";
+$s = "$visitDate,$visitTime,$visitIp\n";
 
 file_put_contents("visits.csv", $s, FILE_APPEND);
 

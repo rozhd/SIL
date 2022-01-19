@@ -136,6 +136,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.cards .list {
+    display: none;
+}
+
+.list .card-task h5 {
+    margin-bottom: 0;
+}
+
 .card-task, .card-common{
     background: #F4F7FE;
     border-radius: 15px;
@@ -153,12 +161,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.locked .svg-lock {
+.cards .locked .svg-lock {
     margin-bottom: 2em;
 }
 
 .svg-lock {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .task-answer h1 {
